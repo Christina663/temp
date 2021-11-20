@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of temp is to convert a numerical representation of temperature among three common units: Fahrenheit, Celsius and Kelvin.
+The goal of temp is to convert a numerical representation of temperature values among three common units: Fahrenheit, Celsius and Kelvin.
 
 ## Installation
 
