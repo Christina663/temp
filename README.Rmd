@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# temp
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of temp is to convert a numerical representation of temperature among three common units: Fahrenheit, Celsius and Kelvin.
+
+## Installation
+
+The package temp is not yet on CRAN, but you can download it using the following R command:
+
+``` r
+devtools::install_github("Christina663/temp")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem of converting Kelvin representation of temperature values to Fahrenheit representation:
+
+```{r example}
+library(temp)
+temperature_conversion("K", "F", 50)
+```
+
+This is another basic example, and this time we convert Celsius representation to Kelvin using the same syntax. Note that we can input either the first letter of the unit or the full name:
+
+```{r}
+temperature_conversion("Celsius", "Kelvin", 50)
+```
+
+And our last example is to convert Celsius representation to Fahrenheit. Notice that we can also input a combination of full name of the unit and first letter:
+```{r}
+temperature_conversion("Celsius", "F", 50)
+```
+
